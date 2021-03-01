@@ -1,15 +1,22 @@
 #include <stdio.h>
 int bubble_sort(int li[],int length){
 	int i,j;
-	for( i = 0;i<length-1;i++){
+	for( i = 0;i<length-1;i++){//冒泡排序趟数
+	    int flag;
+	    flag=0;
 		for( j = 0;j<length-1-i;j++){
 			if(li[j]>li[j+1]){
 				int temp = 0;
 				temp = li[j];
 				li[j]=li[j+1];
 				li[j+1]=temp;
+				flag =1;
 			}
 		}
+		if（flag==0）{
+		    return 0;
+		}
+
 	}
 	return 0;
 }
