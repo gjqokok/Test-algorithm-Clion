@@ -1,10 +1,10 @@
 #include <stdio.h>
 int bubble_sort(int li[],int length){
 	int i,j;
-	for( i = 0;i<length-1;i++){//冒泡排序趟数
+	for( i = 0;i<length-1;i++){//冒泡排序趟数n-1
 	    int flag;
 	    flag=0;
-		for( j = 0;j<length-1-i;j++){
+		for( j = 0;j<length-1-i;j++){//一趟需要交换的次数
 			if(li[j]>li[j+1]){
 				int temp = 0;
 				temp = li[j];
@@ -32,3 +32,4 @@ int main(){
 	return 0;
 } 
 
+//时间复杂度O(n*n)
