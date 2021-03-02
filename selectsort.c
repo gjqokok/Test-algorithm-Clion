@@ -1,9 +1,9 @@
 #include <stdio.h>
 int select_sort(int li[],int length) {
-	for (int i = 0; i < length-1; i++)//×Ü¹²ÐèÒªÑ¡Ôñn-1ÌË
+	for (int i = 0; i < length-1; i++)//æ€»å…±éœ€è¦é€‰æ‹©n-1è¶Ÿ
 	{
 		int min =i;
-		for ( int j = i+1; j < length; j++)//±éÀúµ½Êý×éÏÂ±êÎªn-1Ê±ÎªÖ¹
+		for ( int j = i+1; j < length; j++)//éåŽ†åˆ°æ•°ç»„ä¸‹æ ‡ä¸ºn-1æ—¶ä¸ºæ­¢
 		{
 			if (li[j]<li[min])
 			{
@@ -16,7 +16,7 @@ int select_sort(int li[],int length) {
 		li[i] = li[min];
 		li[min] = temp;
 		/*
-		½«ÎÞÐòÐòÁÐµÄ×îÐ¡ÖµÓëµÚÒ»¸öÖµ½»»»¡£
+		å°†æ— åºåºåˆ—çš„æœ€å°å€¼ä¸Žç¬¬ä¸€ä¸ªå€¼äº¤æ¢ã€‚
 		*/
 	}
 	return 0;
@@ -33,3 +33,4 @@ int main() {
 	printf("\n");
 	return 0;
 }
+//æ—¶é—´å¤æ‚åº¦O(n*n)

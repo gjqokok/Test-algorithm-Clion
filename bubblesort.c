@@ -2,7 +2,7 @@
 int bubble_sort(int li[],int length){
 	int i,j;
 	for( i = 0;i<length-1;i++){//冒泡排序趟数n-1
-	    int flag;
+	    int flag;//标志位flag
 	    flag=0;
 		for( j = 0;j<length-1-i;j++){//一趟需要交换的次数
 			if(li[j]>li[j+1]){
